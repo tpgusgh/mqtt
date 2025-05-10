@@ -5,8 +5,8 @@ function Send() {
   const [payload, setPayload] = useState({ topic: "", message: "" });
   const [connectStatus, setConnectStatus] = useState("Disconnected");
   const clientId = `emqx_react_${Math.random().toString(16).substring(2, 8)}`;
-  const username = "bssm_free";
-  const password = "bssm_free";
+  const username = "bssm_free"; //클라에셔햐교
+  const password = "bssm_free"; //esp에서도 설정 필수
   const [client, setClient] = useState(null);
 
   useEffect(() => {
